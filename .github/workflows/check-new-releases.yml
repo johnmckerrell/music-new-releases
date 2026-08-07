@@ -1,5 +1,8 @@
 name: Check for new releases
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: '0 6 * * *'
