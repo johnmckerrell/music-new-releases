@@ -17,11 +17,16 @@ a duplicate of the first.
 
 ## Subscribing
 
-Once pushed, the feed is readable directly from GitHub, or (better — correct
-content-type, CDN-cached) via jsDelivr:
+The feed is readable directly from GitHub's raw file host:
 
 ```
-https://cdn.jsdelivr.net/gh/<you>/<repo>@main/feed.xml
+https://raw.githubusercontent.com/johnmckerrell/music-new-releases/main/feed.xml
+```
+
+or (better — correct `application/xml` content-type, CDN-cached) via jsDelivr:
+
+```
+https://cdn.jsdelivr.net/gh/johnmckerrell/music-new-releases@main/feed.xml
 ```
 
 ## Notes
@@ -29,10 +34,8 @@ https://cdn.jsdelivr.net/gh/<you>/<repo>@main/feed.xml
 - Schedule: `.github/workflows/check-new-releases.yml`, twice daily. Adjust
   the cron lines if that's too often/infrequent.
 - The fetch in `check.py` sends browser-like headers because the site's
-  CloudFront/WAF setup 403s a bare request otherwise. Worth testing the
-  first scheduled run manually (`workflow_dispatch`, or the "Run workflow"
-  button in the Actions tab) in case GitHub's runner IPs get treated
-  differently than this worked from.
+  CloudFront/WAF setup 403s a bare request otherwise. Confirmed working from
+  GitHub-hosted runners as of the 2026-08-07 run.
 - If officialcharts.com changes its page structure, `check.py` will fail
   loudly (non-zero exit) rather than silently going stale — GitHub emails
   you on a failed scheduled run by default.
