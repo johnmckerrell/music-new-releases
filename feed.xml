@@ -3,10 +3,17 @@
 <channel>
   <title>Official Charts New Releases — unofficial update feed</title>
   <link>https://www.officialcharts.com/new-releases/</link>
-  <atom:link href="feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://cdn.jsdelivr.net/gh/johnmckerrell/music-new-releases@main/feed.xml" rel="self" type="application/rss+xml" />
   <description>Unofficial, unaffiliated notification feed. Pings when the Official Charts “New Releases” page appears to show a new week's releases. No chart content is reproduced here — follow the link for the actual page.</description>
   <language>en-gb</language>
-  <lastBuildDate>Mon, 03 Aug 2026 13:57:05 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 07 Aug 2026 16:27:36 GMT</lastBuildDate>
+  <item>
+    <title>New releases updated — 7 August 2026</title>
+    <link>https://www.officialcharts.com/new-releases/</link>
+    <guid isPermaLink="false">2026-08-07T16:27:36Z</guid>
+    <pubDate>Fri, 07 Aug 2026 16:27:36 GMT</pubDate>
+    <description>The Official Charts New Releases page appears to have been updated for the week of 7 August 2026. This is an unofficial, unaffiliated notification feed and reproduces no chart content -- follow the link for the actual page.</description>
+  </item>
   <item>
     <title>New releases updated — 31 July 2026</title>
     <link>https://www.officialcharts.com/new-releases/</link>
