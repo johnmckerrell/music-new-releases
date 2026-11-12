@@ -1,6 +1,10 @@
 {
-  "lastHash": "5e74dbdeb6e3faf659d3ad6d3e5d479d6ba4712cb8aba6561ccd7aabc93887de",
+  "lastHash": "32dea47d3c5ee1815444168b7991aa00d24b76e882f8c5f2fc1077cf4fbb9f92",
   "history": [
+    {
+      "detectedAt": "2026-11-12T22:57:32Z",
+      "weekOf": "2026-11-13"
+    },
     {
       "detectedAt": "2026-11-05T23:00:09Z",
       "weekOf": "2026-11-06"
